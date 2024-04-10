@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@100;300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1c1c1c;
+    font-family: 'Poppins', 'Montserrat', sans-serif;
+    color: white;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content{
+    flex: 1;
+}
+
+#navlogo {
+    float: left;
+    box-shadow: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    height: 80px;
+    background-color: #023047;
+    color: #ffffff;
+}
+
+.navbarmd {
+    align-items: center;
+    display: flex;
+    color: #e2e2e2;
+    margin: 0.5% 3%;
+    padding: 10px;
+}
+
+.navbarmd .nav-item {
+    margin: 0 10px; 
+}
+
+.navbarmd .nav-item {
+    margin: 0 10px;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: #1a2c47;
+}
+
+img {
+    max-width: 50px;
+    height: auto;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #1a2c47;
+    margin-top: auto;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    float: left;
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration:underline;
+}
+
+/*  basket */
+.btncart:hover {
+    background-color: #023047;
+    border: solid 1px #023047;
+    color: white;
+}
+
+.btncart {
+    color: #c63c18;
+    border: solid 1px #c63c18;
+    border-radius: 10px;
+}
+
+#dropdownMenuButton {
+    margin: auto;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+
+.basket-icon {
+    cursor: pointer;
+}
+
+
+.basket-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    color: black;
+    width: 200px;
+    max-height: 300px;
+    overflow-y: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+    transition: display 0.3s ease;
+}
+
+.basket:hover .basket-container {
+    display: block;
+}
+
+.basket-container:hover {
+    display: block;
+}
+
+.basket {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.basket i {
+    margin-right: 10px;
+}
+
+.basket-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.basket-item {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.total-price {
+    padding: 8px;
+    font-weight: bold;
+}
+
+.clear-checkout-buttons {
+    padding: 8px;
+    text-align: center;
+}
+
+.btncart {
+    margin-right: 5px;
+}
+
+#loginButton {
+    margin-top: 10px;
+    margin-right: 16px;
+}

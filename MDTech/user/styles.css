@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@100;300&display=swap');
+
+body {
+	background-color: lightgray;
+	font-family: 'Montserrat', sans-serif;
+}
+
+img {
+	width: 100px;
+}
+
+h1{
+	margin: 10px;
+}
+
+.contact {
+	margin: 100px;
+}
+
+.search-input {
+	margin: 20px 10px 20px 10px;
+}
+
+.search-button {
+	margin: 20px 10px 20px 10px;
+}
+
+.table {
+	border: solid #023047 5px;
+	margin: 50px auto 0;
+	background-color: lightgray;
+}
+
+.centertd {
+	border: solid #023047 5px; 
+	width: 900px;
+	color: #023047;
+}
+
+.sidetd {
+	border: solid #023047 5px; 
+	width: 300px;
+	color: #023047;
+}
+
+tr {
+	border: solid #023047 1px;
+}
+
+.navbar {
+	background-color: #023047;
+}
+
+.navbar-nav .nav-link {
+	color: #219ebc;
+	font-size: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+	color: #219ebc;
+}
+
+.search-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: fixed;
+	left: 0;
+	padding: 20px;
+}
+
+.search-input {
+	width: 200px;
+	padding: 10px;
+	border: 1px solid #023047;
+}
+
+.search-button {
+	margin-top: 10px;
+	background-color: #219ebc;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+}

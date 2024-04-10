@@ -1,0 +1,23 @@
+
+TERMÉK MEGJELENÍTÓ GOMB/KAPCSOLÓ
+
+
+ALTER TABLE `airconditioners`
+ADD COLUMN `shown` ENUM('on', 'off') NOT NULL DEFAULT 'off';
+
+
+<!-- Egy gomb a státusz átkapcsolásához -->
+<button onclick="toggleStatus()">Átkapcsolás</button>
+
+<script>
+// JavaScript kód a státusz átkapcsolásához
+function toggleStatus() {
+    // Egyelőre csak konzolra logoljuk az állapotot, de a valóságban elküldhetnéd a szervernek is
+    console.log('Átkapcsolva');
+    
+    // Itt kellene elküldeni a szervernek a státusz változását (on vagy off)
+    // Ehhez fetch vagy más AJAX technikát használhatsz
+}
+</script>
+
+

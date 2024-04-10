@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="logo.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <title>MDTech - Adatvédelmi tájékoztatás</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="home.html">
+                <div class="d-flex align-items-center">
+                    <img src="logo.png" alt="MDTech logo" title="MDTech logo" style="max-width: 40px; height: auto;"
+                        id="navlogo">
+                    <span style="color: #e2e2e2; margin-left: 3px;">MD<span style="color:#fa3d3b">Tech</span></span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarCenteredExample" aria-controls="navbarCenteredExample" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
+                <ul class="navbar-nav mb-2 mb-lg-0 navbarmd">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">KEZDŐLAP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="shop.html">BOLT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="about.html">RÓLUNK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact.html">KAPCSOLAT</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <div class="dropdown text-center">
+                            <div id="loginButtonContainer" style="margin-bottom: 10px;">
+                                <button id="loginButton" class="btn btn-dark"
+                                    onclick="redirectToLogin()">Bejelentkezés</button>
+                            </div>
+                            <div id="loggedInMenu" style="display: none;" class="dropdown align-items-center">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="user2.png" alt="Profil ikon"
+                                        style="width: 20px; height: 20px; margin-right: 5px; margin-bottom: 4px;">
+                                    Profil
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Profil szerkesztése</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Rendeléseim</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#" onclick="logOut()">Kijelentkezés</a>
+                                    <div id="dynamicButtonContainer"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container main-content privacy">
+        <h1>Adatvédelmi Tájékoztató</h1>
+        <p>Frissítve: 2024. március 11.</p>
+        <br>
+        <h3>1. Adatkezelő neve és elérhetőségei:</h3>
+        <p>MDtech kft.</p>
+        <p>Székhely: 7630 Pécs, Klíma utca 6. 20/48, HUN</p>
+        <p>E-mail: <a href="mailto:contact@mdtech.com">contact@mdtech.com</a></p>
+        <p>Telefonszám: +36 30 911 112</p>
+        <br>
+        <h3>2. Adatkezelés célja:</h3>
+        <p>A webshop által kezelt személyes adatokat kizárólag a vásárlás folyamatának lebonyolítása, szállítás és
+            ügyfélszolgálat céljából használjuk fel. Az adatkezelés során nem kerül sor automatizált döntéshozatalra,
+            profilalkotásra vagy egyéb hasonló tevékenységre.
+        </p>
+        <br>
+        <h3>3. Kezelt személyes adatok:</h3>
+        <ul>
+            <li>Teljes név vagy álnév</li>
+            <li>E-mail cím</li>
+            <li>Szállítási cím</li>
+            <li>Telefonszám</li>
+            <li>Egyéb vásárláshoz kapcsolódó adatok</li>
+        </ul>
+        <h3>4. Adatkezelés jogalapja:</h3>
+        <p>Az adatkezelés jogalapja a GDPR 6. cikk (1) bekezdés b) pontja alapján a szerződés teljesítése és a vásárlói
+            megállapodások előkészítése és megkötése(bővebben <a href="https://www.privacy-regulation.eu/hu/6.htm">itt</a>).
+        </p>
+        <br>
+        <h3>5. Adattovábbítás:</h3>
+        <p>Az Ön személyes adatait harmadik félnek kizárólag akkor továbbítjuk, ha ez a vásárlás folyamatának szükséges
+            része (például szállítási cím a szállító cégnek). Adatait nem adjuk át harmadik félnek marketing vagy egyéb
+            célokra.
+        </p>
+        <br>
+        <h3>6. Adatmegőrzési idő:</h3>
+
+        <p>Az adatokat a vásárlást követően a vonatkozó jogszabályoknak megfelelően és szükség szerint megőrizzük. A
+            vásárlást követő 5 évig megőrizzük a számlázási és garanciális célokra.
+        </p>
+        <br>
+        <h3>7. Jogai:</h3>
+        <p>Az Ön jogai közé tartozik az adathozzáférés, helyesbítés, törlés és tiltakozás joga az Ön személyes adatainak
+            kezelése ellen. A jogok érvényesítéséhez kérjük, vegye fel velünk a kapcsolatot az <a href="mailto:contact@mdtech.com">contact@mdtech.com</a> e-mail
+            címen.
+        </p>
+        <br>
+        <h3>8. Panaszok:</h3>
+        <p>Amennyiben úgy érzi, hogy személyes adatait jogtalanul kezeljük, panaszával fordulhat a Nemzeti Adatvédelmi
+            és Információszabadság Hatósághoz <a href="https://www.naih.hu/">(NAIH)</a>.
+        </p>
+    </div>
+
+    <footer class="text-light mt-auto">
+        <div class="container py-3">
+            <p>&copy; 2024 MDTech. Minden jog fenntartva.</p>
+            <a href="privacy_notice.html">Adatvédelmi tájékoztató</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+    <script>
+        function redirectToLogin() {
+            window.location.href = '../login.html';
+        }
+    </script>
+    <script src="../logout.js"></script>
+    <script src="../loginstatus.js"></script>
+    <script src="../currentUserRole.js"></script>
+
+</body>
+
+</html>
